@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold');
+@import url('https://db.onlinewebfonts.com/c/5687bcc3d3c810e989d07635704a8901?family=Dessthia');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    box-shadow: 2px 2px 3px rgba(211, 211, 211, 0.455);
+}
+.Starbucks-logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.icon{
+    padding-right: 20px;
+}
+.nav-icon{
+  color:#006241;
+  padding: 0px 10px;
+  transition: all 0.3s ease 0s ;
+  &:hover{
+    color: #000;
+  }
+}
+.navbar-links{
+    list-style: none;
+    margin: 0;
+}
+.navbar-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navbar-links li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "SoDo Sans SemiBold",sans-serif;
+    color: black;
+    transition: all 0.3s ease 0s ;
+    &:hover{
+      color: #006241;
+    }
+}
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus{
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  position: relative;
+}
+.navbar-toggler span{
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon{
+  display: block;
+  position: absolute;
+  height: 1.5px;
+  width: 100%;
+  background: #000;
+  border-radius: 1px;
+  opacity:1px;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+.middle-bar{
+  margin-top: 0px;
+}
+
+.navbar-toggler .top-bar{
+  margin-top: 0px;
+  height: 1.5px;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar{
+  height: 1.6px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar{
+  margin-top: 0px;
+  height: 1.5px;
+  transform: rotate(-135deg);
+}
+
+.navbar-toggler.collapsed .top-bar{
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+  margin-top: 20px;
+  transform: rotate(0deg);
+}
+.signinbtn{
+    font-family: "SoDo Sans SemiBold",sans-serif;
+    font-size: 14px;
+    border: 1px solid black;
+    color: #000;
+    background-color: #fff;
+    padding: 11px 15px 9px 15px;
+    transition: all 0.3s ease 0s ;
+    &:hover{
+        color: #fff;
+        background-color: #000;
+    }
+}
+.logbtn{
+    font-family: "SoDo Sans SemiBold",sans-serif;
+    font-size: 14px;
+    border: 1px solid black;
+    color: #fff;
+    background-color: #000;
+    padding: 11px 15px 9px 15px;
+    transition: all 0.3s ease 0s ;
+    &:hover{
+        color: #000;
+        background-color: #fff;
+    }
+}
+section{
+    background-color: #D4EAE2;
+    font-family: "Manrope", sans-serif;
+}
+.main{
+    background-image: url(assets/InShot_20240615_225035354.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main-row{
+    margin-top: 80px;
+}
+
+.main-img{
+    position: relative;
+    left: -50px;
+    width: 600px;
+    height: 600px;
+    animation: ani 5s linear infinite;
+}
+@media (max-width:1200px) {
+    .main-img{
+        position: relative;
+        left: 0px;
+        width: 500px;
+        height: 500px;
+        animation: ani 5s linear infinite;
+    }
+}
+@media (max-width:1024px) {
+    .main-img{
+        position: relative;
+        left: 0px;
+        width: 500px;
+        height: 500px;
+        animation: ani 5s linear infinite;
+    }
+}
+@media (max-width:992px) {
+    .main-img{
+        position: relative;
+        left: 0px;
+        width: 400px;
+        height: 400px;
+        animation: ani 5s linear infinite;
+    }
+    .quote{
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .quote p{
+        font-size: 12px;
+        font-family: "Manrope", sans-serif;
+    }
+}
+@media (max-width:460px) {
+    .main-img{
+        position: relative;
+        left: 0px;
+        width: 300px;
+        height: 300px;
+        animation: ani 5s linear infinite;
+    }
+}
+@keyframes ani {
+    0% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(-5px);
+
+      }
+  }
+.back-text{
+    font-size: 150px;
+    font-family: "Modern No. 20",sans-serif;
+    color: rgba(128, 128, 128, 0.175);
+    font-weight: 550;
+    opacity: 80%;
+    position: absolute;
+    top: 130px;
+    left:0px
+}
+@media (max-width:991.5px) {
+    .back-text{
+        font-size: 100px;
+        font-family: "Modern No. 20",sans-serif;
+        color: rgba(128, 128, 128, 0.175);
+        font-weight: 550;
+        opacity: 80%;
+        position: absolute;
+        top: 130px;
+        left:0px
+    }
+}
+@media (max-width:460px) {
+    .back-text{
+        font-size: 50px;
+        font-family: "Modern No. 20",sans-serif;
+        color: rgba(128, 128, 128, 0.175);
+        font-weight: 550;
+        opacity: 80%;
+        position: absolute;
+        top: 130px;
+        left:0px
+    }
+}
+.main-heading{
+    font-family: "Dessthia",sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+}
+@media (max-width:992px) {
+    .main-heading{
+        font-family: "Dessthia",sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+    }
+}
+.Starbucks{
+    color: #006241;
+}
+.quote p{
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+}
+@media (max-width:992px) {
+    .quote p{
+        font-size: 12px;
+        font-family: "Manrope", sans-serif;
+    }
+}
+.menu-btn{
+    font-family: "SoDo Sans SemiBold",sans-serif;
+    font-size: 14px;
+    border: 1px solid #006241;
+    color: #fff;
+    background-color: #006241;
+    padding: 11px 15px 9px 15px;
+    transition: all 0.3s ease 0s ;
+    &:hover{
+        background-color: transparent;
+        color: #006241;
+    }
+}
+.banner-img1{
+    object-fit: cover;
+    width: 660px;
+    height: 410px;
+}
+.banner-text1{
+    background-color: #c8a786;
+}
+.banner-text2{
+    background-color: #d5c29c;
+}
+.banner-text3{
+    background-color: #C0E8A6;
+}
+.banner-text4{
+    background-color: #d2f6c5;
+}
+.banner-heading{
+    font-size: 28px;
+    font-weight: 600;
+}
+.banner-para{
+    font-size: 16px;
+    font-weight: 500;
+}
+.banner-btn{
+    font-family: "SoDo Sans SemiBold",sans-serif;
+    font-size: 14px;
+    border: 1px solid #000;
+    color: #000;
+    background-color:transparent;
+    padding: 11px 15px 9px 15px;
+    transition: all 0.3s ease 0s ;
+}
+@media (max-width:1399px) {
+    .banner-img1{
+        object-fit: cover;
+        width: 570px;
+        height: 410px;
+    }
+}
+@media (max-width:1199.5px) {
+    .banner-img1{
+        object-fit: cover;
+        width: 480px;
+        height: 410px;
+    }
+    .banner-para{
+        font-size: 14px;
+        padding: 0px 20px;
+    }
+}
+@media (max-width:992px) {
+    .banner-img1{
+        object-fit: cover;
+        width: 100%;
+        height: 410px;
+    }
+}
+#rewards-main{
+    height:100vh;
+    background-color: #D4EAE2;
+    background-image: url(assets/rewards-star-pattern.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width:426px) {
+    #rewards-main{
+        height:100vh;
+        background-color: #D4EAE2;
+        background-image: url(assets/hero-mobile_2021.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.reward-heading{
+    color: #000;
+    font-weight: 500;
+}
+.reward-main-text p{
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    margin: 20px 0px;
+    letter-spacing: 1px;
+}
+.reward-main-btn{
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+    width: 150px;
+    background-color: #006241;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    transition: all 0.3s ease 0s ;
+    &:hover{
+        background-color: #1D3836;
+        color: white;
+    }
+}
+#rewards-steps{
+    background-image: url(assets/rewards-mix-pattern.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    height: 100%;
+}
+.reward-main-heading{
+    color: #fff;
+    padding: 50px;
+}
+.rewardcard1{
+    background-image: url(assets/rewardcard1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ddeae3;
+    padding: 0px; 
+    height: 425px;
+}
+.rewardcard1 .card-text{
+    background-color: #dce9df77;
+    padding: 20px 0px 0px 20px;
+}
+.rewardcard2{
+    background-image: url(assets/rewardcard2.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #ddeae3;
+    height: 210px;
+}
+.rewardcard2 .card-text{
+    background-color: #ddeae377;
+    padding: 20px 0px 0px 20px;
+}
+.rewardcard3{
+    background-image: url(assets/rewardcard3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ddeae3;
+    padding: 0;
+    height: 207px;
+}
+.rewardcard3 .card-text{
+    background-color: #d6e7df77;
+    padding: 10px 0px 0px 20px;
+}
+.rewardcard4{
+    background: linear-gradient(#00624197,#00624197),url(assets/rewardcard4.jpg) ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff;
+    height: 207px;
+}
+.rewardcard4 .card-text{
+    padding: 20px 0px 20px 20px;
+}
+.rewardcard4 .card-text .heading{
+   color: #fff;
+}
+.card-num{
+    color: grey;
+}
+.card-icon{
+    color: #fff;
+    padding: 10px 15px;
+    background-color: #006241;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s ;
+    &:hover{
+        color: #006241;
+        background-color: white;
+    }
+}
+.rewards-stars{
+    background-color: #F1F8F5;
+    box-shadow: 0px -1px 2px inset lightgrey;
+}
+.star-button{
+    font-size: 24px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    padding: 6px 12px;
+    border: 0;
+    background-color: transparent;
+}
+.star{
+    color: #CBA258;
+    font-size: 18px;
+}
+@media (max-width:465px) {
+    .star-button{
+        font-size: 20px;
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        padding: 6px 12px;
+        border: 0;
+        background-color: transparent;
+    }
+    .star{
+        color: #CBA258;
+        font-size: 16px;
+    }
+}
+@media (max-width:375px) {
+    .star-button{
+        font-size: 16px;
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        padding: 6px 12px;
+        border: 0;
+        background-color: transparent;
+    }
+    .star{
+        color: #CBA258;
+        font-size: 12px;
+    }
+}
+
+.btn-active{
+    border-bottom: 5px solid #006241;
+}
+.reward-food{
+    background-color: #D4E9E2;
+    height: 367px;
+}
+.reward-food-img{
+    width: 375px;
+    height: 211px;
+}
+.reward-food-text{
+    width: 330px;
+}
+#rewards-mobile{
+    background-color: #D4E9E2;
+}
+.phone-img{
+    width: 300px;
+    height: 570px;
+}
+@media (max-width:768px) {
+    .phone-img{
+        width: 250px;
+        height: 470px;
+    }
+}
+.step-num{
+    color: #006241;
+    font-size: 20px;
+    font-weight: 500;
+}
+.step-name{
+    font-family: "Manrope", sans-serif;
+    color: gray;
+}
+.step-ex p{
+    font-weight: 700;
+}
+.app-link{
+    text-decoration: none;
+    color: #006241;
+    &:hover{
+        color: #006241;
+    }
+}
+#otherlinks{
+    font-family: "SoDo Sans SemiBold",sans-serif;
+    background-color: #fff;
+    box-shadow: -3px -3px 3px rgba(211, 211, 211, 0.455);
+    padding: 40px 0px;
+}
+.links{
+    padding-bottom: 20px;
+}
+.links h3{
+    font-size: 22px;
+}
+.links ul{
+    padding: 0px;
+    font-family: "Manrope", sans-serif;
+}
+.links li{
+    list-style: none;
+    padding-top: 20px;
+    font-size: 16px;
+}
+.links a{
+    color: grey;
+    text-decoration: none;
+    transition: all 0.3s ease-in 0s;
+    &:hover{
+        color: #000;
+    }
+}
+#footer{
+    background-color: #fff;
+}
+.footer-icon{
+    display: inline;
+    padding: 20px;
+    color: black;
+    transition: all 0.3s ease-in ;
+    &:hover{
+        color: gray;
+    }
+}
+.footer-links ul li{
+    list-style: none;
+    padding-top: 20px;
+}
+.footer-links a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease-in 0s;
+    &:hover{
+        text-decoration-line: underline;
+    }
+}
+.footer-cp{
+    color: gray;
+    font-size: 12px;
+    padding: 10px 0px;
+}
+.menu-img-hotcoffee{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.menu-link-hotcoffee{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    &:hover{
+        color: black;
+    }
+}
+.menu-nav-link{
+    color: rgba(0, 0, 0, 0.58);
+    text-decoration: none;
+    padding-right: 8px;
+    &:hover{
+        color: rgba(0, 0, 0, 0.58);
+    }
+}
+.menu-nav-link-p{
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.58);
+}
+.nodisplay{
+    display: none;
+}
+#menu{
+    margin-top: 100px;
+    background-color: #fff;
+}
+.menu-nav li{
+    list-style: none;
+    padding: 10px 0px;
+}
+.menu-nav ul{
+    padding: 0;
+}
+.menu-nav a{
+    color: grey;
+    text-decoration: none;
+    font-size: 15px;
+}
+.submenu{
+    font-family: "SoDo Sans SemiBold",sans-serif;
+    font-size: 19px;
+    padding-bottom: 20px;
+}
+hr{
+    opacity: 20%;
+}
+.menu-title{
+    font-family: "SoDo Sans SemiBold",sans-serif;
+    font-size: 28px;
+}
+.submenu-title{
+    font-family: "SoDo Sans SemiBold",sans-serif;
+    font-size: 24px;
+}
+.menu-img{
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.menu-link{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    &:hover{
+        color: black;
+    }
+}
+#menu-footer{
+    background-color: #1E3932;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+.menu-footer-text a{
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid #ffffffb3;
+}
+.menu-footer-text1{
+    color: #ffffffb3;
+    font-size: 16px;
+    font-weight: 500;
+}
+.menu-footer-text2{
+    font-size: 16px;
+    font-family: "SoDo Sans SemiBold",sans-serif;
+    margin: 0;
+}
+.menu-footer-icon a i{
+    color: #ffffffb3;
+}
